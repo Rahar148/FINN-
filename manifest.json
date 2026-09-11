@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "FINN — Team Clipboard",
+  "version": "0.2.0",
+  "description": "A private team clipboard and pinboard for builders and researchers.",
+  "permissions": ["storage", "contextMenus", "activeTab", "scripting"],
+  "host_permissions": ["https://efwfsiqkuydxbeaepvfx.supabase.co/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Save to FINN",
+    "default_icon": { "16": "icons/icon16.png", "32": "icons/icon32.png" }
+  },
+  "background": { "service_worker": "service-worker.js", "type": "module" },
+  "options_page": "index.html",
+  "icons": { "16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' https://efwfsiqkuydxbeaepvfx.supabase.co wss://efwfsiqkuydxbeaepvfx.supabase.co"
+  }
+}
