@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "FINN — Team Clipboard",
-  "version":"0.3.0",
+  "version":"0.3.1",
   "description": "A private team clipboard and pinboard for builders and researchers.",
   "permissions": ["storage", "contextMenus", "activeTab", "scripting"],
   "host_permissions": ["https://efwfsiqkuydxbeaepvfx.supabase.co/*"],
